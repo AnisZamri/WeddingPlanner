@@ -240,14 +240,18 @@
         function mysejadah() {
 
             let c = 1;
-            sessionStorage.setItem("name", "mysejadah");  
+			var paxSej = prompt("How many pax?");
+			sessionStorage.setItem("totalPaxSej",paxSej);
+            sessionStorage.setItem("name", "mysejadah"); 
 			sessionStorage.setItem("price", c);     
 
        }
 
 	   function mypopcorn() {
 
-		let c = 10;
+		let c = 1;
+		var paxPop = prompt("How many pax?");
+		sessionStorage.setItem("totalPaxPop",paxPop);
 		sessionStorage.setItem("name1", "mypopcorn");   
 		sessionStorage.setItem("price1", c);    
 
