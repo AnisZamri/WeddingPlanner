@@ -228,12 +228,12 @@
                             <div class="event-col">
                                 <h4>Name</h4>
                                 <!-- <p style="color: black;" id = "name"></p> -->
-                                <span id = "" ></span>
+                                <span id = "nameSetA" ></span>
                                 <span id = ""></span>
                             </div>
                             <div class="event-col">
                                 <h4>Price</h4>
-                                <span id = ""></span><br>
+                                <span id = "priceSetA"></span><br>
                                 <span id = ""></span>
                             </div>
                            
@@ -257,6 +257,8 @@
     <p id="price1"></p>
     <p id="nameSudu"></p>
     <p id="priceSudu"></p>
+    <p id="nameSetA"></p>
+    <p id="priceSetA"></p>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
@@ -317,7 +319,15 @@
         
               var doubleValueSudu = parseFloat(totSudu);
               var newValue2Sudu = doubleValueSudu || 0;
-              
+        //CATERING A 
+            var nameSetA = sessionStorage.getItem("namecatA");
+            var priceSetA = sessionStorage.getItem("pricecatA");
+            var paxSetA = sessionStorage.getItem("totalPaxA");
+            var totSetA = paxSetA * priceSetA;
+    
+            var doubleValueSA = parseFloat(totSetA);
+            var newValue2SA = doubleValueSA || 0;
+        
         //Total semua harga yang user pick
               var total = newValue +  newValue1 + newValue2 + newValue2Sudu;
         
@@ -332,7 +342,13 @@
         
               document.getElementById("nameSudu").innerHTML = nSudu;
               document.getElementById("priceSudu").innerHTML = newValue2Sudu;
-document.getElementById("total").innerHTML = total;
+            
+              document.getElementById("nameSetA").innerHTML = nameSetA;
+              document.getElementById("priceSetA").innerHTML = newValue2SA;
+            
+            
+            
+              document.getElementById("total").innerHTML = total;
               console.log(value);
         
               

@@ -137,7 +137,7 @@
 						</span> -->
 						<div class="feature-copy">
 							<h2>Set A (Set Jimat)</h2>
-							<p>RM750/100 pax</p>
+							<p>RM7.50 per pack</p>
 							<ul>
                                 <li>Nasi Putih</li>
                                 <li>Ayam Masak Merah</li>
@@ -149,7 +149,7 @@
 						</div>
 					</div>
                     
-                    <p><a href="cart.html" onclick="return mycateringA()" class="btn btn-default btn-sm" style="float: right;">Order Now</a></p>
+                    <p><a href="cart2.html" onclick="return mycateringA()" class="btn btn-default btn-sm" style="float: right;">Order Now</a></p>
 				</div>	
                 			
 			</div>
@@ -216,7 +216,9 @@
 	<script>
         function mycateringA() {
 
-            let a = 750;
+            let a = 7.50;
+			var paxA = prompt("How many pax?");
+			sessionStorage.setItem("totalPaxA",paxA);
             sessionStorage.setItem("namecatA", "Catering A");  
 			sessionStorage.setItem("pricecatA", a);     
 
