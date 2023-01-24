@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -113,77 +115,72 @@
 		</div>
 	</header>
 
-	<div id="fh5co-gallery" class="fh5co-section-gray">
+	<div id="fh5co-services" class="fh5co-section-gray">
 		<div class="container">
+			
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>List of Doorgift for RM1</h2>
+					<p>This is all doorgift RM1</p>
+				</div>
+			</div>
+
 			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-					<span> </span>
-					<h2>Our Door Gift Packages</h2>
-					<p></p>
+                <div class="col-md-6 animate-box">
+					<div class="fh5co-video fh5co-bg" style="background-image: url(images/sejadah.jpg); ">
+					
+					</div>
 				</div>
+				<div class="col-md-6">
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<!-- <span class="icon">
+							<i class="icon-calendar"></i>
+						</span> -->
+						<div class="feature-copy">
+                            <br><br>
+							<h2>SEJADAH GULUNG KECIL</h2>
+							<p>Sejadah yang lembut membuatkan khusyuk dalam solat, Alhamdulillah</p>
+							<ul>
+                                <li>Pelbagai warna & corak</li>
+                                <li>Sedia nama pengantin</li>
+                            </ul>
+						</div>
+					</div>
+                    
+                    <p><a href="cart.html" onclick="return mysejadah()" class="btn btn-default btn-sm" style="float: right;">Order Now</a></p>
+				</div>	
+                			
 			</div>
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<ul id="fh5co-gallery-list">
 
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/popcorn.jpg); ">
-							<a href="#" class="color-4">
-								<div class="case-studies-summary">
-									<!-- <span>RM1.50 per pack </span> -->
-									<h2>RM 1.50</h2>
-								</div>
-							</a>
-						</li>
-	
-							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/sejadah.jpg)">
-								<a href="doorGiftRM1.html" class="color-3">
-									<div class="case-studies-summary">
-										<!-- <span>RM1.00 per pack </span> -->
-										<h2>RM 1</h2>
-									</div>
-								</a>
-							</li>
-							<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/setSudu.jpg); ">
-								<a href="#" class="color-4">
-									<div class="case-studies-summary">
-										<!-- <span>RM 2.00 per pack </span> -->
-										<h2>RM 2</h2>
-									</div>
-								</a>
-							</li>
-	
-						
-						<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/kipasTangan.jpg); "> 
-						<a href="#">
-							<div class="case-studies-summary">
-								<!-- <span>RM2.50 per pack</span> -->
-								<h2>RM 2.50</h2>
-							</div>
-						</a>
-					</li>
-				
+            <br><br>
 
-					<li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/cookies.jpg); ">
-						<a href="#" class="color-3">
-							<div class="case-studies-summary">
-								<!-- <span>RM3.00 per pack</span> -->
-								<h2>RM 3</h2>
-							</div>
-						</a>
-					</li>
-				
-					<!-- <li class="one-third animate-box" data-animate-effect="fadeIn" style="background-image: url(images/tasbih.jpg); ">
-						<a href="#" class="color-2">
-							<div class="case-studies-summary">
-								<span>RM 3</span>
-								<h2>Tasbih</h2>
-							</div>
-						</a>
-					</li> -->
-
-					</ul>		
+            <div class="row">
+                <div class="col-md-6 animate-box">
+					<div class="fh5co-video fh5co-bg" style="background-image: url(images/popcorn.jpg); ">
+					
+					</div>
 				</div>
+				<div class="col-md-6">
+					<div class="feature-left animate-box" data-animate-effect="fadeInLeft">
+						<!-- <span class="icon">
+							<i class="icon-calendar"></i>
+						</span> -->
+						<div class="feature-copy">
+                            <br><br>
+							<h2>POPCORN</h2>
+							<p>Bertih jagung yang dimakan enak dan meletop apabila digigit</p>
+							<ul>
+                                <li>Pelbagai jenis perisa</li>
+                                <li>Sedia nama pengantin</li>
+                            </ul>
+						</div>
+					</div>
+                    <p><a href="cart.html" onclick="return mypopcorn()" class="btn btn-default btn-sm" style="float: right;">Order Now</a></p>
+
+				</div>				
 			</div>
+
+			
 		</div>
 	</div>
 
@@ -238,5 +235,28 @@
 	<script src="js/main.js"></script>
 
 	</body>
+
+	<script>
+        function mysejadah() {
+
+            let c = 1;
+			var paxSej = prompt("How many pax?");
+			sessionStorage.setItem("totalPaxSej",paxSej);
+            sessionStorage.setItem("name", "mysejadah"); 
+			sessionStorage.setItem("price", c);     
+
+       }
+
+	   function mypopcorn() {
+
+		let c = 1;
+		var paxPop = prompt("How many pax?");
+		sessionStorage.setItem("totalPaxPop",paxPop);
+		sessionStorage.setItem("name1", "mypopcorn");   
+		sessionStorage.setItem("price1", c);    
+
+		}
+
+    </script>
 </html>
 
