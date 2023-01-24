@@ -395,6 +395,7 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
+  background: white;
 }
 @media screen and (max-width: 768px) {
   #fh5co-counter,
@@ -411,8 +412,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
+  /* border: 2px solid rgba(255, 255, 255, 0.5); */
+  border: 2px solid black;
+  /* background: rgba(255, 255, 255, 0.1); */
+  background: white;
   padding: 30px;
   width: 100%;
   float: left;
@@ -431,7 +434,8 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap h3 {
   font-size: 20px;
   color: #fff;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.5); */
+  border-bottom: 1px solid black;
   display: block;
   padding-bottom: 20px;
   text-transform: uppercase;
@@ -441,11 +445,13 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-event .event-wrap p,
 #fh5co-event .event-wrap span {
   display: block;
-  color: rgba(255, 255, 255, 0.8);
+  /* color: rgba(255, 255, 255, 0.8); */
+  color:black;
 }
 #fh5co-counter .event-wrap i,
 #fh5co-event .event-wrap i {
-  color: white;
+  /* color: white; */
+  color: black;
   font-size: 20px;
 }
 #fh5co-counter .event-wrap .event-col,

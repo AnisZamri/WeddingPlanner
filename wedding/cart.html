@@ -35,7 +35,6 @@
     }
     }
     </style>
-    </style>
 	
 	<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -196,101 +195,88 @@
 			  </div>
               
 
-
-			  <p class="mb-1">Door Gift</p>
+		<!-- Doorgift -->
+			<p class="mb-1">Door Gift</p>
 			  <!-- Sejadah -->
 				<div class="card-body">
 					<div class="d-flex justify-content-between">
-						   <div class="d-flex flex-row align-items-center">
+						<div class="d-flex flex-row align-items-center">
 							  <!-- <div>
 								  <img src="images/popcorn.jpg"class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
 							  </div> -->
 	  
-							  <div class="ms-3">
-									  <h5 id="name"></h5>
-							  </div>
-							  
-							  <div style="width: 80px;display: inline; margin-left: 200px;">
-								  <h5><span class="mb-0" id="price"></span></h5>
-								</div>
-						   </div>
-	
-							
-	
-							<div class="d-flex flex-row align-items-center">
-								<div style="width: 50px;">
+							<div class="ms-3">
+								<h5 id="name"></h5>
 							</div>
+							  
+							<div style="width: 80px;display: inline; margin-left: 200px;">
+								<h5><span class="mb-0" id="price"></span></h5>
+							</div>
+						</div>
+
+						<div class="d-flex flex-row align-items-center">
+							<div style="width: 50px;"></div>
 							
 							<div style="width: 80px;display: inline;">
 							 <!-- <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>  -->
 							</div>
-							</div>
-							
-	
-					
-	
-	
-	
+						</div>
 					</div>
-				  </div>
-				  <!-- Popcorn -->
-				<div class="card-body">
-				  <div class="d-flex justify-content-between">
-						 <div class="d-flex flex-row align-items-center">
-							<!-- <div>
-								<img src="images/popcorn.jpg"class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-							</div> -->
-	
-							<div class="ms-3">
-									<h5 id="name1"></h5>
-							</div>
-							
-							<div style="width: 80px;display: inline; margin-left: 190px;">
-								<h5> <span class="mb-0" id="price1"></span></h5>
-							  </div>
-						 </div>
-  
-						  
-  
-						  <div class="d-flex flex-row align-items-center">
-							  <div style="width: 50px;">
-						  </div>
-						  
-						  <div style="width: 80px;display: inline;">
-							
-						  </div>
-				  </div>
-				  </div>
 				</div>
 
-				<div class="card-body">
+
+				  <!-- Popcorn -->
+				  <div class="card-body">
 					<div class="d-flex justify-content-between">
-						   <div class="d-flex flex-row align-items-center">
+						<div class="d-flex flex-row align-items-center">
 							  <!-- <div>
 								  <img src="images/popcorn.jpg"class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
 							  </div> -->
 	  
-							  <div class="ms-3">
-									  <h5 id="NameAz"></h5>
-							  </div>
-							  
-							  <div style="width: 80px;display: inline; margin-left: 190px;">
-								  <h5> <span class="mb-0" id="PriceAz"></span></h5>
-								</div>
-						   </div>
-	
-							
-	
-							<div class="d-flex flex-row align-items-center">
-								<div style="width: 50px;">
+							<div class="ms-3">
+								<h5 id="name1"></h5>
 							</div>
+							  
+							<div style="width: 80px;display: inline; margin-left: 200px;">
+								<h5><span class="mb-0" id="price1"></span></h5>
+							</div>
+						</div>
+
+						<div class="d-flex flex-row align-items-center">
+							<div style="width: 50px;"></div>
 							
 							<div style="width: 80px;display: inline;">
-							  
+							 <!-- <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>  -->
 							</div>
+						</div>
 					</div>
+				</div>
+
+				<div class="card-body">
+					<div class="d-flex justify-content-between">
+						<div class="d-flex flex-row align-items-center">
+							  <!-- <div>
+								  <img src="images/popcorn.jpg"class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
+							  </div> -->
+	  
+							<div class="ms-3">
+								<h5 id="sudu"></h5>
+							</div>
+							  
+							<div style="width: 80px;display: inline; margin-left: 200px;">
+								<h5><span class="mb-0" id="priceSudu"></span></h5>
+							</div>
+						</div>
+
+						<div class="d-flex flex-row align-items-center">
+							<div style="width: 50px;"></div>
+							
+							<div style="width: 80px;display: inline;">
+							 <!-- <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>  -->
+							</div>
+						</div>
 					</div>
-				  </div>
+				</div>
 
 				<p class="mb-1">Emcee</p>
 				
@@ -415,8 +401,17 @@
       var doubleValue21 = parseFloat(totPop);
 	  var newValue2 = doubleValue21 || 0;
 	  
+	  //untuk popcorn
+	  var nSudu = sessionStorage.getItem("nameSudu");
+      var pSudu = sessionStorage.getItem("priceSudu");
+      var paxSudu = sessionStorage.getItem("totalPaxSudu");
+	  var totSudu = paxSudu * pSudu;
 
-      var total = newValue +  newValue1 + totPop;
+      var doubleValueSudu = parseFloat(totSudu);
+	  var newValue2Sudu = doubleValueSudu || 0;
+	  
+//Total semua harga yang user pick
+      var total = newValue +  newValue1 + newValue2 + newValue2Sudu;
 
 // untuk display dekat cart 
       document.getElementById("NameAz").innerHTML = valueAz;
@@ -426,6 +421,9 @@
 	  document.getElementById("name1").innerHTML = value21;
       document.getElementById("price1").innerHTML = newValue2;
       document.getElementById("total").innerHTML = total;
+
+	  document.getElementById("sudu").innerHTML = nSudu;
+      document.getElementById("priceSudu").innerHTML = newValue2Sudu;
       console.log(value);
 
 	  
