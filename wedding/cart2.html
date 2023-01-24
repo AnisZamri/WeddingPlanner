@@ -224,12 +224,17 @@
                             <div class="event-col">
                                 <h4>Name</h4>
                                 <!-- <p style="color: black;" id = "name"></p> -->
-                                <span id = "NameAz" ></span>
-                                <span id = ""></span>
-                                <span id = ""></span>
+                                <span id = "azminname" ></span>
+                                <span id = "olivername"></span>
+                                <span id = "jerryname"></span>
+                                <span id = "celname"></span>
                             </div>
                             <div class="event-col">
                                 <h4>Price</h4>
+                                <span id = "azminprice"></span>
+                                <span id = "oliverprice"></span>
+                                <span id = "jerryprice"></span>
+                                <span id = "celprice"></span>
                                 <span id = "PriceAz"></span>
                                 <span id = ""></span>
                                 <span id = ""></span>
@@ -315,8 +320,6 @@
 
     <p id="NameAz"></p>
     <p id="PriceAz"></p>
-
-    <!-- DOORGIFT -->
     <p id="name"></p>
     <p id="price"></p>
 	<p id="name1"></p>
@@ -389,11 +392,36 @@
 
     <script>
 
-        // untuk azmin
-            var valueAz = sessionStorage.getItem("keyName");
-              var value1 = sessionStorage.getItem("key");
-              var doubleValue1 = parseFloat(value1);
-              var newValue = doubleValue1 || 0;
+      //emcee
+      var azminname = sessionStorage.getItem("azminname");
+      var azminprice = sessionStorage.getItem("azminprice");
+      var azminreal = parseFloat(azminprice) || 0;
+
+	  document.getElementById("azminname").innerHTML = azminname;
+	  document.getElementById("azminprice").innerHTML = azminprice;
+
+	  var olivername = sessionStorage.getItem("olivername");
+      var oliverprice = sessionStorage.getItem("oliverprice");
+      var oliverreal = parseFloat(oliverprice) || 0;
+
+	  document.getElementById("olivername").innerHTML = olivername;
+	  document.getElementById("oliverprice").innerHTML = oliverprice;
+
+
+	  var jerryname = sessionStorage.getItem("jerryname");
+      var jerryprice = sessionStorage.getItem("jerryprice");
+      var jerryreal = parseFloat(jerryprice) || 0;
+
+	  document.getElementById("jerryname").innerHTML = jerryname;
+	  document.getElementById("jerryprice").innerHTML = jerryprice;
+
+	  var celname = sessionStorage.getItem("celname");
+      var celprice = sessionStorage.getItem("celprice");
+      var celreal = parseFloat(celprice) || 0;
+
+	  document.getElementById("celname").innerHTML = celname;
+	  document.getElementById("celprice").innerHTML = celprice;
+
         
         //untuk sejadahhh
               var value2 = sessionStorage.getItem("name");
@@ -536,8 +564,7 @@
 
 
         //Total semua harga yang user pick
-              var total = newValue +  newValue1 + newValue2 + newValue2Sudu +newValue2SA + newValue2SB + newValue2SC + newValue2SD +
-              newValuePT1+newValuePT2+ newValuePT3 +newValuePT4+newValuePT5 + newValueT1 +newValueT2 +newValueT3+newValueT4+newValueT5+newValueT6;
+              var total = newValue +  newValue1 + newValue2 + newValue2Sudu;
         
         // untuk display dekat cart 
               document.getElementById("NameAz").innerHTML = valueAz;

@@ -196,7 +196,7 @@
                             </ul>
 						</div>
 					</div>
-                    <p><a href="checkout.html" onclick="return myFunction()" class="btn btn-default btn-sm" style="float: left;">Book Now</a></p>
+                    <p><a href="cart2.html" onclick="return myFunction()" class="btn btn-default btn-sm" style="float: left;">Book Now</a></p>
 
 				</div>				
 			</div>
@@ -259,9 +259,11 @@
     <script>
         function myFunction() {
 
-            let c = 1000;
-            sessionStorage.setItem("key", c);
-            
+			let c = 1200;
+			sessionStorage.setItem("jerryname", "Jerry Wong"); 
+            sessionStorage.setItem("jerryprice", c);
+             
+			alert("Successfully add to cart!");
 
        }
 
