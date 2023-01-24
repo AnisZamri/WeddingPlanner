@@ -132,13 +132,15 @@
                             <div class="event-col">
                                 <h4>Name</h4>
                                 <!-- <p style="color: black;" id = "name"></p> -->
-                                <span id = "" ></span>
-                                <span id = ""></span>
+                                <span id = "nameDress1" ></span>
+                                <span id = "nameDress2"></span>
+                                <span id = "nameDress3"></span>
                             </div>
                             <div class="event-col">
                                 <h4>Price</h4>
-                                <span id = ""></span><br>
-                                <span id = ""></span>
+                                <span id = "priceDress1"></span>
+                                <span id = "priceDress2"></span>
+                                <span id = "priceDress3"></span>
                             </div>
                            
                         </div>
@@ -235,9 +237,6 @@
                                 <span id = "oliverprice"></span>
                                 <span id = "jerryprice"></span>
                                 <span id = "celprice"></span>
-                                <span id = "PriceAz"></span>
-                                <span id = ""></span>
-                                <span id = ""></span>
                             </div>
                            
                         </div>
@@ -318,8 +317,9 @@
     
 	</div>
 
-    <p id="NameAz"></p>
-    <p id="PriceAz"></p>
+    
+
+
     <p id="name"></p>
     <p id="price"></p>
 	<p id="name1"></p>
@@ -362,6 +362,24 @@
     <p id="priceVenue5"></p>
     <p id="nameVenue6"></p>
     <p id="priceVenue6"></p>
+
+     <!-- DRESS -->
+     <p id="nameDress1"></p>
+     <p id="priceDress1"></p>
+     <p id="nameDress2"></p>
+     <p id="priceDress2"></p>
+     <p id="nameDress3"></p>
+     <p id="priceDress3"></p>
+
+     <!-- EMCEE -->
+     <p id="azminname"></p>
+     <p id="azminprice"></p>
+     <p id="olivername"></p>
+     <p id="oliverprice"></p>
+     <p id="jerryname"></p>
+     <p id="jerryprice"></p>
+     <p id="celname"></p>
+     <p id="celprice"></p>
 
 
 	<div class="gototop js-top">
@@ -561,14 +579,33 @@
       var doubleValueT6 = parseFloat(valueT6);
       var newValueT6 = doubleValueT6 || 0;
 
+    // untuk dress 1
+    var nameDress1 = sessionStorage.getItem("dressName1");
+      var priceDress1 = sessionStorage.getItem("dressPrice1");
 
+      var doubleValueD1 = parseFloat(priceDress1);
+      var newValueD1 = doubleValueD1 || 0;
+
+      // untuk dress 2
+    var nameDress2 = sessionStorage.getItem("dressName2");
+      var priceDress2 = sessionStorage.getItem("dressPrice2");
+
+      var doubleValueD2 = parseFloat(priceDress2);
+      var newValueD2 = doubleValueD2 || 0;
+
+      // untuk dress 3
+    var nameDress3 = sessionStorage.getItem("dressName3");
+      var priceDress3 = sessionStorage.getItem("dressPrice3");
+
+      var doubleValueD3 = parseFloat(priceDress3);
+      var newValueD3 = doubleValueD3 || 0;
 
         //Total semua harga yang user pick
-              var total = newValue +  newValue1 + newValue2 + newValue2Sudu;
+              var total = newValue +  newValue1 + newValue2 + newValue2Sudu +newValueD1+newValueD2+newValueD3 +
+              newValue2SA+newValue2SB+newValue2SC+newValue2SD + newValuePT1+newValuePT2+newValuePT3+newValuePT4+newValuePT5 +
+              newValueT1+newValueT2+newValueT3+newValueT4+newValueT5+newValueT6;
         
         // untuk display dekat cart 
-              document.getElementById("NameAz").innerHTML = valueAz;
-              document.getElementById("PriceAz").innerHTML = value1;
 
               document.getElementById("name").innerHTML = value2;
               document.getElementById("price").innerHTML = totSej;
@@ -627,7 +664,16 @@
             document.getElementById("nameVenue6").innerHTML = valueVenue6;
             document.getElementById("priceVenue6").innerHTML = valueT6;
 
-              document.getElementById("total").innerHTML = total;
+            document.getElementById("nameDress1").innerHTML = nameDress1;
+            document.getElementById("priceDress1").innerHTML = priceDress1;
+
+            document.getElementById("nameDress2").innerHTML = nameDress2;
+            document.getElementById("priceDress2").innerHTML = priceDress2;
+
+            document.getElementById("nameDress3").innerHTML = nameDress3;
+            document.getElementById("priceDress3").innerHTML = priceDress3;
+              
+            document.getElementById("total").innerHTML = total;
               console.log(value);
         
 
