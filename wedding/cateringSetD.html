@@ -142,7 +142,7 @@
 						</span> -->
 						<div class="feature-copy">
 							<h2>Set D (Set Eksklusif)</h2>
-							<p>RM1600/100 pax</p>
+							<p>RM16.50 per pax</p>
 							<ul>	
 								<h3>Set D</h3>
 											
@@ -166,7 +166,7 @@
 						</div>
 					</div>
                     
-                    <p><a href="cart.html" onclick="return mysejadah()" class="btn btn-default btn-sm" style="float: right;">Order Now</a></p>
+                    <p><a href="cart2.html" onclick="return mycateringD()" class="btn btn-default btn-sm" style="float: right;">Order Now</a></p>
 				</div>	
                 			
 			</div>
@@ -231,22 +231,15 @@
 	</body>
 
 	<script>
-        function mysejadah() {
+        function mycateringD() {
 
-            let c = 1;
-            sessionStorage.setItem("name", "mysejadah");  
-			sessionStorage.setItem("price", c);     
-
-       }
-
-	   function mypopcorn() {
-
-		let c = 10;
-		sessionStorage.setItem("name", "mypopcorn");   
-		sessionStorage.setItem("price", c);    
+		let d = 16.50;
+		var paxD = prompt("How many pax?");
+		sessionStorage.setItem("totalPaxD",paxD);
+		sessionStorage.setItem("namecatD", "Catering D");  
+		sessionStorage.setItem("pricecatD", d);     
 
 		}
-
     </script>
 </html>
 

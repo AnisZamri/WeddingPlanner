@@ -119,11 +119,6 @@
 	</header>
 
 	<div id="fh5co-services" class="fh5co-section-gray">
-		<ul class="breadcrumb" style="margin-left:150px;">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="photography.html">Photography</a></li>
-			<li>HD Photography</li>
-		  </ul>
 		<div class="container">
 
             <div class="row">
@@ -196,7 +191,7 @@
                             </ul>
 						</div>
 					</div>
-                    <p><a href="checkout.html" onclick="return myFunction()" class="btn btn-default btn-sm" style="float: left;">Book Now</a></p>
+                    <p><a href="cart2.html" onclick="return myPhoto1()" class="btn btn-default btn-sm" style="float: left;">Book Now</a></p>
 
 				</div>				
 			</div>
@@ -256,16 +251,18 @@
 	<script src="js/main.js">
     </script>
 
+	</body>
+
     <script>
-        function myFunction() {
+        function myPhoto1() {
 
             let c = 1200;
-            sessionStorage.setItem("key", c);
+			sessionStorage.setItem("photoname1", "HD Photography");   
+            sessionStorage.setItem("photoprice1", c);
 
        }
 
     </script>
-
-	</body>
+	
 </html>
 

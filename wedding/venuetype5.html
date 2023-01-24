@@ -119,11 +119,6 @@
 	</header>
 
 	<div id="fh5co-services" class="fh5co-section-gray">
-		<ul class="breadcrumb" style="margin-left:150px;">
-			<li><a href="index.html">Home</a></li>
-			<li><a href="venuedecoration.html">Venue</a></li>
-			<li>Green Wedding Palette</li>
-		  </ul>
 		<div class="container">
 
             <div class="row">
@@ -223,7 +218,7 @@
                             </ul>
 						</div>
 					</div>
-                    <p><a href="checkout.html" onclick="return myFunction()" class="btn btn-default btn-sm" style="float: left;">Book Now</a></p>
+                    <p><a href="cart2.html" onclick="return myVenue5()" class="btn btn-default btn-sm" style="float: left;">Book Now</a></p>
 
 				</div>				
 			</div>
@@ -283,17 +278,18 @@
 	<script src="js/main.js">
     </script>
 
-    <script>
-        function myFunction() {
+</body>
 
-            let c = 5000;
-            sessionStorage.setItem("key", c);
-            
+<script>
+function myVenue5() {
 
-       }
+	let c = 5000;
+	sessionStorage.setItem("venuename5", "Green Wedding Palette");
+	sessionStorage.setItem("venueprice5", c);
 
-    </script>
+}
 
-	</body>
+</script>
+
 </html>
 
