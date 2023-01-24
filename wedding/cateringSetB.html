@@ -116,6 +116,11 @@
 	</header>
 
 	<div id="fh5co-services" class="fh5co-section-gray">
+		<ul class="breadcrumb" style="margin-left:150px;">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="catering.html">Catering</a></li>
+			<li>Set B</li>
+		  </ul>
 		<div class="container">
 			
 			<div class="row animate-box">
@@ -138,7 +143,7 @@
 						<div class="feature-copy">
                            
 							<h2>Set B (Set Standard)</h2>
-							<p>RM950/100 pax</p>
+							<p>RM9.50 per pax</p>
 							<ul>
 
 							    <li>Nasi Putih @ Nasi Minyak</li>
@@ -153,7 +158,7 @@
 						</div>
 					</div>
                     
-                    <p><a href="cart.html" onclick="return mysejadah()" class="btn btn-default btn-sm" style="float: right;">Order Now</a></p>
+                    <p><a href="cart2.html" onclick="return mycateringB()" class="btn btn-default btn-sm" style="float: right;">Order Now</a></p>
 				</div>	
                 			
 			</div>
@@ -218,22 +223,15 @@
 	</body>
 
 	<script>
-        function mysejadah() {
+        function mycateringB() {
 
-            let c = 1;
-            sessionStorage.setItem("name", "mysejadah");  
-			sessionStorage.setItem("price", c);     
-
-       }
-
-	   function mypopcorn() {
-
-		let c = 10;
-		sessionStorage.setItem("name", "mypopcorn");   
-		sessionStorage.setItem("price", c);    
+		let b = 9.50;
+		var paxB = prompt("How many pax?");
+		sessionStorage.setItem("totalPaxB",paxB);
+		sessionStorage.setItem("namecatB", "Catering B");  
+		sessionStorage.setItem("pricecatB", b);     
 
 		}
-
     </script>
 </html>
 
